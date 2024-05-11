@@ -19,27 +19,13 @@ import {
 } from "./styled";
 import { Button } from "../../components/Button";
 import { ConfirmationModal } from "../../components/ConfirmationModal";
+import { CardGrid, GridCard } from "../../components/CardGrid";
 
 export function ViewCollection(): ReactElement {
   const { collectionId } = useParams();
   if (collectionId === undefined) throw new Error("Must have collection id");
   return <ViewCollectionPage collectionId={collectionId} />;
 }
-
-const CourseContentsWrapper = styled.div`
-  max-width: 1000px;
-  margin: 0 auto;
-`;
-
-const CourseContents = styled.div`
-  display: grid;
-  margin: 0 auto;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 10px 5px;
-  @media screen and (max-width: 600px) {
-    grid-template-columns: 1fr;
-  }
-`;
 
 const ExtraCollectionDetails = styled.div`
   max-width: 800px;
@@ -88,28 +74,15 @@ export function ViewCollectionPage({
           )}
         </ActionsWrapper>
         <h3>Sets in this collection</h3>
-        <CourseContentsWrapper>
-          <CourseContents>
-            {collection.sets.map((set, i) => {
-              return <SetCard key={i} set={set} userSets={sets} />;
-            })}
-          </CourseContents>
-        </CourseContentsWrapper>
+        <CardGrid>
+          {collection.sets.map((set, i) => {
+            return <SetCard key={i} set={set} userSets={sets} />;
+          })}
+        </CardGrid>
       </ContentWrapper>
     </HanehldaView>
   );
 }
-
-const StyledSetCard = styled.div`
-  box-sizing: border-box;
-  width: 100%;
-  max-width: 300px;
-  border: 1px solid black;
-  border-radius: 20px;
-  margin: 0 auto;
-  padding: 10px;
-  background-color: ${theme.hanehldaColors.TEXT_CREAM};
-`;
 
 const StatRow = styled.div`
   display: flex;
@@ -128,24 +101,6 @@ const StatRow = styled.div`
   }
 `;
 
-const CollectionNameLink = styled.a`
-  display: inline-block;
-  text-decoration: none;
-  background-color: ${theme.colors.WHITE};
-  border: none;
-  border-radius: ${theme.borderRadii.md};
-  padding: 5px;
-  font-weight: bold;
-  width: 100%;
-  max-width: 250px;
-  box-sizing: border-box;
-  font-size: ${theme.fontSizes.md};
-  color: ${theme.hanehldaColors.DARK_BLUE};
-  margin: 0 auto 20px;
-  border: 1px solid black;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-`;
-
 function SetCard({
   set,
   userSets,
@@ -154,10 +109,11 @@ function SetCard({
   userSets: Record<string, UserSetData>;
 }) {
   return (
-    <StyledSetCard>
-      <CollectionNameLink as={Link} to={ViewSetPath(set.id)}>
-        {set.title}
-      </CollectionNameLink>
+    <GridCard
+      color={theme.hanehldaColors.TEXT_CREAM}
+      title={set.title}
+      link={ViewSetPath(set.id)}
+    >
       <StatRow>
         <em>Number of terms</em>
         <strong>{set.terms.length}</strong>
@@ -175,7 +131,7 @@ function SetCard({
           </em>
         </div>
       )}
-    </StyledSetCard>
+    </GridCard>
   );
 }
 
