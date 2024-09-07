@@ -43,10 +43,12 @@ export function PickExercise() {
 
 const StartExerciseButton = styled.a`
   display: inline-block;
-  border-radius: 8px;
-  border: 1px solid black;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  background-color: ${theme.colors.WHITE};
+  border-radius: ${theme.borderRadii.md_small};
+  border: ${theme.borderRadii.b};
+  box-shadow: ${theme.borderRadii.bs};
+  background-color: ${theme.hanehldaColors.WHITE_BUTTON};&:hover {
+    background-color: ${theme.hanehldaColors.WHITE_HIGHLIGHT};
+  }
   color: ${theme.hanehldaColors.DARK_GRAY};
   text-decoration: none;
   font-size: 1.5em;
@@ -56,11 +58,11 @@ const StartExerciseButton = styled.a`
 `;
 
 const StyledExerciseCard = styled.div`
-  border: 1px solid black;
   background-color: ${theme.hanehldaColors.DARK_BLUE};
   margin: 0 8px;
-  border-radius: 8px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: ${theme.borderRadii.md_small};
+  border: ${theme.borderRadii.b};
+  box-shadow: ${theme.borderRadii.bs};
   padding: 16px;
   flex: 1;
   min-width: 250px;
