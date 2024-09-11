@@ -28,8 +28,8 @@ const StyledWelcome = styled.h3`
   background: ${theme.hanehldaColors.DARK_RED};
   color: ${theme.colors.WHITE};
   border-radius: ${theme.borderRadii.md};
-  border: ${theme.borderRadii.b};
-  box-shadow: ${theme.borderRadii.bs};
+  border: ${theme.borderRadii.border};
+  box-shadow: ${theme.boxShadow.bs};
   font-family: "Inika", serif;
   font-size: 30px;
   padding: 20px 0;

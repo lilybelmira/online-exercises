@@ -24,8 +24,8 @@ const StyledModal = styled.div`
   max-height: 80vh;
   background: ${theme.colors.WHITE};
   border-radius: ${theme.borderRadii.md};
-  border: ${theme.borderRadii.b};
-  box-shadow: ${theme.borderRadii.bs};
+  border: ${theme.borderRadii.border};
+  box-shadow: ${theme.boxShadow.bs};
   padding: 20px;
   display: flex;
   flex-direction: column;

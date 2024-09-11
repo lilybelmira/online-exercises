@@ -15,9 +15,9 @@ import { AlignedCherokee } from "../AlignedCherokee";
 import { ExerciseComponentProps } from "../exercises/Exercise";
 
 const StyledFlashcardBody = styled.button`
-  border-radius: ${theme.borderRadii.md_small};
-  border: ${theme.borderRadii.b};
-  box-shadow: ${theme.borderRadii.bs};
+  border-radius: ${theme.borderRadii.sm};
+  border: ${theme.borderRadii.border};
+  box-shadow: ${theme.boxShadow.thick};
   width: 100%;
   min-height: 200px;
   margin: 30px auto;

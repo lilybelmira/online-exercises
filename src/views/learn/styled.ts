@@ -15,8 +15,8 @@ export const Widget = styled.div<{
   background-color: ${(p) => p.background};
   color: ${theme.colors.WHITE};
   border-radius: ${theme.borderRadii.md};
-  border: ${theme.borderRadii.b};
-  box-shadow: ${theme.borderRadii.bs};
+  border: ${theme.borderRadii.border};
+  box-shadow: ${theme.boxShadow.bs};
   margin: 0 auto 30px;
   ${(p) =>
     p.align === "left" &&
@@ -45,8 +45,8 @@ export const WidgetButton = styled.button`
     background-color: ${theme.hanehldaColors.WHITE_HIGHLIGHT};
   }
   border-radius: ${theme.borderRadii.md};
-  border: ${theme.borderRadii.b};
-  box-shadow: ${theme.borderRadii.bs};
+  border: ${theme.borderRadii.border};
+  box-shadow: ${theme.boxShadow.bs};
   padding: 10px;
   min-height: 60px;
   width: 100%;

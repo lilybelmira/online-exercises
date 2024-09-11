@@ -37,12 +37,12 @@ export const StyledTable = styled.table`
 
   tr:nth-child(2n) {
     td {
-      background: ${theme.hanehldaColors.TABLE1};
+      background: ${theme.hanehldaColors.TABLE_EVEN};
     }
   }
   tr:nth-child(2n + 1) {
     td {
-      background: ${theme.hanehldaColors.TABLE2};
+      background: ${theme.hanehldaColors.TABLE_ODD};
     }
   }
   @media screen and (${devices.tablet}) {

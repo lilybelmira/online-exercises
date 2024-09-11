@@ -20,9 +20,9 @@ export const ChallengeCard = styled.div`
   flex: 1;
   margin: 30px auto;
   padding: 24px;
-  border-radius: ${theme.borderRadii.md_small};
-  border: ${theme.borderRadii.b};
-  box-shadow: ${theme.borderRadii.bs};
+  border-radius: ${theme.borderRadii.sm};
+  border: ${theme.borderRadii.border};
+  box-shadow: ${theme.boxShadow.thick};
   align-items: center;
   outline: none;
   background: none;

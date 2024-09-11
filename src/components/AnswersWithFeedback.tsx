@@ -57,8 +57,8 @@ const HintContent = styled.div`
   min-height: 100%;
   background: ${theme.colors.LIGHTEST_RED};
   border: 4px solid ${theme.colors.DARK_RED};
-  border-radius: ${theme.borderRadii.md_small};
-  box-shadow: ${theme.borderRadii.bs};
+  border-radius: ${theme.borderRadii.sm};
+  box-shadow: ${theme.boxShadow.bs};
   padding: 8px;
 `;
 
@@ -131,9 +131,9 @@ const StyledAnswerCard = styled.button<{
     background-color: ${theme.hanehldaColors.WHITE_HIGHLIGHT};
   }
   color: ${theme.hanehldaColors.DARK_GRAY};
-  border-radius: ${theme.borderRadii.md_small};
-  border: ${theme.borderRadii.b};
-  box-shadow: ${theme.borderRadii.bs};
+  border-radius: ${theme.borderRadii.sm};
+  border: ${theme.borderRadii.border};
+  box-shadow: ${theme.boxShadow.bs};
   @media screen and (${devices.laptop}) {
     padding: 24px;
   }

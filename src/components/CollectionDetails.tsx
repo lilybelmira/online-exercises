@@ -18,8 +18,8 @@ const StyledCollectionDetails = styled.div`
   padding: 10px;
   margin: 10px;
   border-radius: ${theme.borderRadii.md};
-  border: ${theme.borderRadii.b};
-  box-shadow: ${theme.borderRadii.bs};
+  border: ${theme.borderRadii.border};
+  box-shadow: ${theme.boxShadow.bs};
   background-color: ${theme.hanehldaColors.DARK_BLUE};
   color: white;
 `;
@@ -32,8 +32,8 @@ const ViewDetailsLink = styled.a`
   }
   text-decoration: none;
   border-radius: ${theme.borderRadii.md};
-  border: ${theme.borderRadii.b};
-  box-shadow: ${theme.borderRadii.bs};
+  border: ${theme.borderRadii.border};
+  box-shadow: ${theme.boxShadow.bs};
   max-width: 300px;
   box-sizing: border-box;
   color: ${theme.hanehldaColors.DARK_GRAY};

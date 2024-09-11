@@ -7,7 +7,7 @@ export interface StyledAnchorProps {
 }
 
 export const StyledAnchor = styled.a<StyledAnchorProps>`
-  border-radius: ${theme.borderRadii.md_small};
+  border-radius: ${theme.borderRadii.sm};
   cursor: pointer;
   display: inline-block;
   text-decoration: underline;

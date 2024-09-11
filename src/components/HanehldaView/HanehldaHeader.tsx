@@ -8,15 +8,15 @@ const StyledHeader = styled.header`
   grid-template-areas: "header nav right";
   height: min-content;
   padding: 8px;
-  background-color: ${theme.hanehldaColors.HEADERBAR};
-  color: ${theme.hanehldaColors.WHITETEXT};
-  border-bottom: ${theme.borderRadii.bb};
+  background-color: ${theme.hanehldaColors.HEADER_BAR};
+  color: ${theme.hanehldaColors.WHITE_TEXT};
+  border-bottom: ${theme.borderRadii.seam};
   font-weight: 700;
   h1 {
     flex: 0;
     margin: 0;
     font-size: 35px;
-  color: ${theme.hanehldaColors.WHITETEXT};
+  color: ${theme.hanehldaColors.WHITE_TEXT};
     float: left;
     /* grid-area: header; */
   }

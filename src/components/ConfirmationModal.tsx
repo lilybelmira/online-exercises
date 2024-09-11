@@ -16,9 +16,9 @@ const ConfirmModalContent = styled.div`
 `;
 
 const ConfirmModalActions = styled.div`
-  border-radius: ${theme.borderRadii.md_small};
-  border: ${theme.borderRadii.b};
-  box-shadow: ${theme.borderRadii.bs};
+  border-radius: ${theme.borderRadii.sm};
+  border: ${theme.borderRadii.border};
+  box-shadow: ${theme.boxShadow.bs};
   flex: 0;
   justify-content: space-between;
   flex-direction: row-reverse;

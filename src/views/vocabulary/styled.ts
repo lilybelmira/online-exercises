@@ -9,7 +9,7 @@ export const StyledCourseDescription = styled.div`
   color: white;
   background-color: ${theme.hanehldaColors.DARK_BLUE};
   padding: 20px;
-  box-shadow: ${theme.borderRadii.bs};
+  box-shadow: ${theme.boxShadow.bs};
   h2 {
     margin-top: 0;
   }
@@ -21,8 +21,8 @@ export const ShowMoreButton = styled.button`
     background-color: ${theme.hanehldaColors.WHITE_HIGHLIGHT};
   }
   border-radius: ${theme.borderRadii.md};
-  border: ${theme.borderRadii.b};
-  box-shadow: ${theme.borderRadii.bs};
+  border: ${theme.borderRadii.border};
+  box-shadow: ${theme.boxShadow.bs};
   padding: 10px;
   font-weight: bold;
   color: ${theme.hanehldaColors.DARK_GRAY};

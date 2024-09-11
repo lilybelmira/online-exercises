@@ -43,8 +43,8 @@ export function SignInPage(): ReactElement {
 const StyledSignInMethodButton = styled.button`
   box-sizing: border-box;
   border-radius: ${theme.borderRadii.md};
-  border: ${theme.borderRadii.b};
-  box-shadow: ${theme.borderRadii.bs};
+  border: ${theme.borderRadii.border};
+  box-shadow: ${theme.boxShadow.bs};
   outline: none;
   background-color: ${theme.colors.WHITE};
   width: 100%;
@@ -100,7 +100,7 @@ const ForgotPasswordButton = styled.button`
   color: ${theme.hanehldaColors.TEXT_LIGHT_GRAY};
   outline: none;
   border-radius: ${theme.borderRadii.md};
-  border: ${theme.borderRadii.b};
+  border: ${theme.borderRadii.border};
   box-shadow: none;
   text-decoration: underline;
   background: none;
@@ -197,8 +197,8 @@ const StyledCreateAccountSection = styled.div`
     color: ${theme.colors.WHITE};
     font-size: 40px;
     border-radius: ${theme.borderRadii.md};
-    border: ${theme.borderRadii.b};
-    box-shadow: ${theme.borderRadii.bs};
+    border: ${theme.borderRadii.border};
+    box-shadow: ${theme.boxShadow.bs};
   }
 `;
 
