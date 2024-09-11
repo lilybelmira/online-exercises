@@ -21,7 +21,7 @@ export const ChallengeCard = styled.div`
   margin: 30px auto;
   padding: 24px;
   border-radius: ${theme.borderRadii.sm};
-  border: ${theme.borderRadii.border};
+  border: "none";
   box-shadow: ${theme.boxShadow.thick};
   align-items: center;
   outline: none;

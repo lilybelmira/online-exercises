@@ -35,8 +35,8 @@ const CourseLabel = styled.label<{ checked: boolean }>`
   flex: 0 max-content;
   font-weight: bold;
   border-radius: ${theme.borderRadii.md};
-  border: ${theme.borderRadii.border};
-  box-shadow: ${theme.boxShadow.bs};
+  border: "none";
+  box-shadow: ${theme.boxShadow.light};
   padding: 20px;
   color: ${theme.colors.WHITE};
   background-color: ${theme.hanehldaColors.DARK_BLUE};
@@ -48,7 +48,7 @@ const CourseLabel = styled.label<{ checked: boolean }>`
     checked &&
     css`
       background-color: ${theme.hanehldaColors.DARK_GREEN};
-      box-shadow: ${theme.boxShadow.bs};
+      box-shadow: ${theme.boxShadow.light};
     `}
 `;
 

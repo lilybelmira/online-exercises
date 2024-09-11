@@ -46,8 +46,8 @@ export function PickExercise() {
 const StartExerciseButton = styled.a`
   display: inline-block;
   border-radius: ${theme.borderRadii.sm};
-  border: ${theme.borderRadii.border};
-  box-shadow: ${theme.boxShadow.bs};
+  border: "none";
+  box-shadow: ${theme.boxShadow.light};
   background-color: ${theme.hanehldaColors.WHITE_BUTTON};&:hover {
     background-color: ${theme.hanehldaColors.WHITE_HIGHLIGHT};
   }
@@ -64,8 +64,8 @@ const StyledExerciseCard = styled.div`
   margin: 0 auto;
   max-width: 700px;
   border-radius: ${theme.borderRadii.sm};
-  border: ${theme.borderRadii.border};
-  box-shadow: ${theme.boxShadow.bs};
+  border: "none";
+  box-shadow: ${theme.boxShadow.light};
   padding: 16px;
   flex: 1;
   min-width: 250px;

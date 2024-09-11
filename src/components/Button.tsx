@@ -23,8 +23,8 @@ export const Button = styledWithDefault(
     display: inline-block;
     text-decoration: none;
     border-radius: ${theme.borderRadii.md};
-    border: ${theme.borderRadii.border};
-    box-shadow: ${theme.boxShadow.bs};
+    border: "none";
+    box-shadow: ${theme.boxShadow.light};
     padding: 5px 20px;
     font-weight: bold;
     margin: 8px auto;
@@ -36,8 +36,8 @@ export const Button = styledWithDefault(
         background-color: ${theme.hanehldaColors.WHITE_BUTTON};
         color: ${theme.hanehldaColors.DARK_GRAY};
         border-radius: ${theme.borderRadii.md};
-        border: ${theme.borderRadii.border};
-        box-shadow: ${theme.boxShadow.bs};
+        border: "none";
+        box-shadow: ${theme.boxShadow.light};
         &:hover {
           background-color: ${theme.hanehldaColors.WHITE_HIGHLIGHT};
         }
@@ -56,8 +56,8 @@ export const Button = styledWithDefault(
         background: ${theme.hanehldaColors.DARK_RED};
         color: white;
         border-radius: ${theme.borderRadii.md};
-        border: ${theme.borderRadii.border};
-        box-shadow: ${theme.boxShadow.bs};
+        border: "none";
+        box-shadow: ${theme.boxShadow.light};
         &:hover {
           background-color: ${theme.hanehldaColors.DARK_RED_HIGHLIGHT};
         }
@@ -67,8 +67,8 @@ export const Button = styledWithDefault(
       background: ${theme.colors.MED_GRAY};
       color: ${theme.colors.TEXT_GRAY};
       border-radius: ${theme.borderRadii.md};
-      border: ${theme.borderRadii.border};
-      box-shadow: ${theme.boxShadow.bs};
+      border: "none";
+      box-shadow: ${theme.boxShadow.light};
       cursor: not-allowed;
       &:hover {
         background-color: ${theme.hanehldaColors.GRAY_HIGHLIGHT};

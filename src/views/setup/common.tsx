@@ -31,8 +31,8 @@ const NavigationButton = styled.button`
   outline: none;
   background-color: ${theme.colors.WHITE};
   border-radius: ${theme.borderRadii.md};
-  border: ${theme.borderRadii.border};
-  box-shadow: ${theme.boxShadow.bs};
+  border: "none";
+  box-shadow: ${theme.boxShadow.light};
   padding: 10px;
   display: flex;
   align-self: flex-end;

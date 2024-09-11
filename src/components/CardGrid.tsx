@@ -34,8 +34,8 @@ const StyledGridCard = styled.div<{ color: string; textColor: string }>`
   width: 100%;
   max-width: 300px;
   border-radius: ${theme.borderRadii.md};
-  border: ${theme.borderRadii.border};
-  box-shadow: ${theme.boxShadow.bs};
+  border: "none";
+  box-shadow: ${theme.boxShadow.light};
   margin: 0 auto;
   padding: 10px;
   background-color: ${(p) => p.color};
@@ -47,8 +47,8 @@ const GridCardHeader = styled.a`
   text-decoration: none;
   background-color: ${theme.colors.WHITE};
   border-radius: ${theme.borderRadii.md};
-  border: ${theme.borderRadii.border};
-  box-shadow: ${theme.boxShadow.bs};
+  border: "none";
+  box-shadow: ${theme.boxShadow.light};
   padding: 5px;
   font-weight: bold;
   width: 100%;

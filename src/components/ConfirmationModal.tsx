@@ -17,8 +17,8 @@ const ConfirmModalContent = styled.div`
 
 const ConfirmModalActions = styled.div`
   border-radius: ${theme.borderRadii.sm};
-  border: ${theme.borderRadii.border};
-  box-shadow: ${theme.boxShadow.bs};
+  border: "none";
+  box-shadow: ${theme.boxShadow.light};
   flex: 0;
   justify-content: space-between;
   flex-direction: row-reverse;

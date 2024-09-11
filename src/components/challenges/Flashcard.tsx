@@ -16,7 +16,7 @@ import { ExerciseComponentProps } from "../exercises/Exercise";
 
 const StyledFlashcardBody = styled.button`
   border-radius: ${theme.borderRadii.sm};
-  border: ${theme.borderRadii.border};
+  border: "none";
   box-shadow: ${theme.boxShadow.thick};
   width: 100%;
   min-height: 200px;

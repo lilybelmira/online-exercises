@@ -14,8 +14,8 @@ export const Form = styled.form<{ standalone?: true }>`
     outline: none;
     background-color: ${theme.colors.WHITE};
     border-radius: ${theme.borderRadii.md};
-    border: ${theme.borderRadii.border};
-    box-shadow: ${theme.boxShadow.bs};
+    border: "none";
+    box-shadow: ${theme.boxShadow.light};
     width: 100%;
     padding: 16px;
     font-size: ${theme.fontSizes.md};
@@ -35,8 +35,8 @@ export const FormSubmitButton = styled.button`
     background-color: ${theme.hanehldaColors.YELLOW_HIGHLIGHT};
   };
   border-radius: ${theme.borderRadii.md};
-  border: ${theme.borderRadii.border};
-  box-shadow: ${theme.boxShadow.bs};
+  border: "none";
+  box-shadow: ${theme.boxShadow.light};
 
   font-family: 'Noto Sans Cherokee', 'Noto Sans', sans-serif;
   font-style: normal;

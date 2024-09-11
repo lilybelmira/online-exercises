@@ -47,11 +47,10 @@ export const theme = {
   borderRadii: {
     md: "7px",
     sm: "4px",
-    border: "none",
     seam: "4px solid rgba(0, 0, 0, 0.1)",
   },
   boxShadow: {
-    bs: "rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px",
+    light: "rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px",
     thick: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
   },
   fontSizes: {
