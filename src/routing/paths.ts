@@ -11,6 +11,8 @@ export const ViewCollectionPath = (collectionId: string) =>
 export const FindAWordPath = "/search";
 export const FindAWordWithQueryPath = (query: string) =>
   `${FindAWordPath}/${query}`;
+export const FindAWordWithQueryPath_Dict = (query: string) =>
+  `/dictionarysearch/${query}`;
 export const MySetsPath = "/my-sets";
 export const MyTermsPath = "/terms";
 export const LessonsPath = "/lessons";
